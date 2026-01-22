@@ -33,27 +33,39 @@
 /* HERO */
 .hero {
   height: 80vh;
-  background: url("images/hero.jpg") center/cover no-repeat;
+  background: 
+    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+    url("beach_1200x600.jpg");
+  background-size: cover;
+  background-position: center bottom; /* keeps sand visible */
+  background-repeat: no-repeat;
+
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 70px; /* prevents navbar overlap */
 }
 
 .overlay {
   text-align: center;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .profile-pic {
-  width: 140px;
-  height: 140px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: 4px solid white;
   margin-bottom: 20px;
-}
-
+  object-fit: cover;
+  
 .hero h1 {
   font-size: 48px;
+  font-weight: normal;
+  letter-spacing: 1px;
 }
 
 /* CONTENT */
