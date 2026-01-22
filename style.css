@@ -37,7 +37,7 @@
   margin-top: 70px;
   background:
     linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-    url("images/beach_1200x600.jpg"); /* Added images/ prefix here too */
+    url("beach_1200x600.jpg"); /* Added images/ prefix here too */
   background-size: cover;
   background-position: center;
   display: flex;
