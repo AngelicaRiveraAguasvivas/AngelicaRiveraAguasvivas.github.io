@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Georgia", serif;
+  font-family: Georgia, serif;
 }
 
 /* NAVBAR */
@@ -14,44 +14,40 @@
   color: white;
   display: flex;
   justify-content: space-between;
-  padding: 15px 40px;
-  z-index: 100;
+  align-items: center;
+  padding: 18px 40px;
+  z-index: 1000;
 }
 
 .navbar a {
   color: white;
-  margin-left: 20px;
   text-decoration: none;
+  margin-left: 25px;
   font-size: 14px;
 }
 
 .logo {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 
 /* HERO */
 .hero {
   height: 80vh;
-  background: 
+  margin-top: 70px;
+  background:
     linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
     url("beach_1200x600.jpg");
   background-size: cover;
-  background-position: center bottom; /* keeps sand visible */
-  background-repeat: no-repeat;
-
+  background-position: center bottom;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 70px; /* prevents navbar overlap */
 }
 
-.overlay {
+.hero-content {
   text-align: center;
   color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .profile-pic {
@@ -59,24 +55,27 @@
   height: 150px;
   border-radius: 50%;
   border: 4px solid white;
-  margin-bottom: 20px;
   object-fit: cover;
-  
+  margin-bottom: 20px;
+}
+
 .hero h1 {
-  font-size: 48px;
+  font-size: 46px;
   font-weight: normal;
   letter-spacing: 1px;
 }
 
 /* CONTENT */
 .content {
-  padding: 60px 40px;
+  padding: 70px 40px;
   background: #f7f7f7;
 }
 
 .cards {
+  max-width: 1200px;
+  margin: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
 }
 
@@ -92,5 +91,11 @@
 }
 
 .card h3 {
-  margin: 10px 0;
+  margin: 12px 0 6px;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
 }
