@@ -37,9 +37,9 @@
   margin-top: 70px;
   background:
     linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-    url("beach_1200x600.jpg");
+    url("images/beach_1200x600.jpg"); /* Added images/ prefix here too */
   background-size: cover;
-  background-position: center bottom;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,6 +57,7 @@
   border: 4px solid white;
   object-fit: cover;
   margin-bottom: 20px;
+  background-color: #ccc; /* This prevents the "empty" look if the file is missing */
 }
 
 .hero h1 {
