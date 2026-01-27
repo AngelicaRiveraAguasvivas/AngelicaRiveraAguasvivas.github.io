@@ -104,3 +104,11 @@
   border-bottom: 2px solid white;
   padding-bottom: 4px;
 }
+.projects-section {
+  background-color: #F0F0DB;
+  padding: 60px 0;
+}
+
+body {
+  background-color: white;
+}
