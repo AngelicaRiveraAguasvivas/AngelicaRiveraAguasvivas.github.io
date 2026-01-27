@@ -105,10 +105,18 @@
   padding-bottom: 4px;
 }
 .projects-section {
-  background-color: #F9EFE7;
-  padding: 60px 0;
+  background-color: #F0F0DB;
+  width: 100%;
 }
 
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px; 
+}
+
+
 body {
+  margin: 0;
   background-color: white;
 }
