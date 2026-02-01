@@ -118,7 +118,7 @@
 .lan {
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 10px;
 }
 body {
   margin: 0;
